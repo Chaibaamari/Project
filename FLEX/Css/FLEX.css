@@ -98,16 +98,16 @@ input:checked +label .sentence{
     -o-transform: translateY(0)!important;
 }
 .row[ for = "c1"]{
-    background-image: url(img/img/sunset_sun_starry_sky_182268_5896x3662.jpg);
+    background-image: url(/img/sunset_sun_starry_sky_182268_5896x3662.jpg);
 }
 .row[ for = "c2"]{
-    background-image: url(img/img/197837.jpg);
+    background-image: url(/img/197837.jpg);
 }
 .row[ for = "c3"]{
-    background-image: url(img/img/winter_snow_silhouette_131193_1920x1080.jpg);
+    background-image: url(/img/winter_snow_silhouette_131193_1920x1080.jpg);
 }
 .row[ for = "c4"]{
-    background-image: url(img/img/winter_night_mountains_79420_1920x1200.jpg);
+    background-image: url(/img/winter_night_mountains_79420_1920x1200.jpg);
 }
 
 
