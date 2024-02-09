@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.parent{
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CARD{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    /* flex-flow: row wrap; */
+    gap: 8px;
+}
+.row{
+    width: 80px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: .75rem;
+    -webkit-border-radius:2 ;
+    -moz-border-radius:2 ;
+    -ms-border-radius:2 ;
+    -o-border-radius:2 ;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s   cubic-bezier(.28 , -0.03 , 0 , .99) ;
+    -webkit-transition: .6s   cubic-bezier(.28 , -0.03 , 0 , .99) ;
+    -moz-transition: .6s   cubic-bezier(.28 , -0.03 , 0 , .99) ;
+    -ms-transition: .6s   cubic-bezier(.28 , -0.03 , 0 , .99) ;
+    -o-transition: .6s   cubic-bezier(.28 , -0.03 , 0 , .99) ;
+    box-shadow: 0px 15px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.card{
+    color: white; 
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card .number{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.card  .sentence{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+} 
+.sentence p{
+    color:#b0b0ba;
+    padding-top: 5px;
+}
+.sentence h4{
+    text-transform: uppercase;
+}
+input {
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+}
+input:checked +label .sentence{
+    opacity: 1 !important;
+    transform: translateY(0)!important;
+    -webkit-transform: translateY(0)!important;
+    -moz-transform: translateY(0)!important;
+    -ms-transform: translateY(0)!important;
+    -o-transform: translateY(0)!important;
+}
+.row[ for = "c1"]{
+    background-image: url(/img/sunset_sun_starry_sky_182268_5896x3662.jpg);
+}
+.row[ for = "c2"]{
+    background-image: url(/img/197837.jpg);
+}
+.row[ for = "c3"]{
+    background-image: url(/img/winter_snow_silhouette_131193_1920x1080.jpg);
+}
+.row[ for = "c4"]{
+    background-image: url(/img/winter_night_mountains_79420_1920x1200.jpg);
+}
+
+
+
+
+
